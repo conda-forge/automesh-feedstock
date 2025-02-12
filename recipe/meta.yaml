@@ -42,6 +42,7 @@ test:
 
 about:
   home: https://autotwin.github.io/automesh
+  description: Automatic mesh generation.
   dev_url: https://github.com/autotwin/automesh
   license: GPL-2.0-or-later
   license_file:
