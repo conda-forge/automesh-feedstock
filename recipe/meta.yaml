@@ -1,5 +1,5 @@
 {% set name = "automesh" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1477e5b33d49e045eb1373372bc3099f80cd735e3e5d352d37e3dbc7ba0fae63
+  sha256: c49e797c792d3d3d10c8c43fe2fe682f4c126c03ed470e608b7caeb6a4dae19c
 
 build:
-  number: 1
+  number: 0
   script:
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
     - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
