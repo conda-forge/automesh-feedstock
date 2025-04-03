@@ -1,5 +1,5 @@
 {% set name = "automesh" %}
-{% set version = "0.3.1" %}
+{% set version = "0.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c49e797c792d3d3d10c8c43fe2fe682f4c126c03ed470e608b7caeb6a4dae19c
+  sha256: 92b7cb10074566611b26a425a2d2a9034add150d983fe7e69adcd45e97aeccf6
 
 build:
   number: 0
