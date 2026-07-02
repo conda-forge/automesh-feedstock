@@ -24,12 +24,13 @@ requirements:
     - cargo-bundle-licenses
     - cmake
     - make
+    - pkg-config
   host:
+    - libnetcdf
     - maturin
     - pip
     - python
   run:
-    - numpy
     - python
 
 test:
