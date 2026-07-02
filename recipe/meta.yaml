@@ -1,5 +1,5 @@
 {% set name = "automesh" %}
-{% set version = "0.3.9" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ddd33a18a81787a0d5becc6c4ef2f60426f00a07b70d7ec585fdaa75b1d7de4d
+  sha256: d8b93e9d040ecaffc7f8e49bff5e3b0e3ac3061dcf2eeeff658f6443597be7c5
 
 build:
   number: 0
@@ -24,12 +24,13 @@ requirements:
     - cargo-bundle-licenses
     - cmake
     - make
+    - pkg-config
   host:
+    - libnetcdf
     - maturin
     - pip
     - python
   run:
-    - numpy
     - python
 
 test:
